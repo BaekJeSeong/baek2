@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Writing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Description Here">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class=" ">
+
+    <div class="main-container">
+        <section class="text-center imagebg space--lg" data-overlay="3">
+            <div class="background-image-holder">
+                <img alt="background" src="img/cowork-miro.jpg" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-6">
+                        <h1>Hi, We're Miro</h1>
+                        <p class="lead">
+
+                        </p>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <nav class="bar bar-toggle " data-fixed-at="200">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 col-xs-3">
+                        <div class="bar__module">
+                            <a href="index.html">
+                                <div class="bar__module">
+                                    <a href="index.html">
+                                        <img class="logo logo-dark" alt="logo" src="img/title-Miro.jpg" style=width:240px />
+
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <!--end module-->
+                    </div>
+                    <div class="col-md-11 col-sm-10 col-xs-9">
+                        <div class="bar__module">
+                            <a class="menu-toggle pull-right" href="#" data-notification-link="sidebar-menu">
+                                <i class="stack-interface stack-menu">
+                                    <div class="notification pos-right pos-top side-menu bg--white"
+                                        data-notification-link="sidebar-menu" data-animation="from-right">
+                                        <div class="side-menu__module pos-vertical-center text-right">
+                                            <ul class="menu-vertical">
+                                                <li>
+                                                    <a class="inner-link" href="/">Home</a>
+                                                </li>
+                                                <li>
+                                                    <a class="inner-link" href="/about">About</a>
+                                                </li>
+                                                <li>
+                                                    <a class="inner-link" href="/list">Board</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                </i>
+                            </a>
+                        </div>
+                        <!--end module-->
+                    </div>
+                    <!--end columns-->
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </nav>
+<div style="width:50%; text-align: center">
+        <form method="post" action="/writing" >
+            <!-- <form method="post" action="/writing"> -->
+            <!-- 이게 무슨 post누르면 form테그안에 내용을 어디 담아서 다 보내는 거랬는데..
+                    포스트 요청 동작 순서가 궁금하다. -->
+            <div class="form-group">
+                <label for="formGroupExampleInput">제목</label>
+                <!--뭐간 분류하는 테그같은데 for=~는 뭘까-->
+                <input name="title" type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+                <!-- name은 지정해서 어디쓰지? type은 꼭 지정해 줘야하나? -->
+            </div>
+            <div class="form-group input">
+                <label for="formGroupExampleInput2">내용</label>
+                <textarea name="contents" type="text" rows="10" class="form-control" id="contents" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <div style="text-align: right">
+                <button type="submit" class="btn btn--primary type--uppercase" style="width:10% ;margin-right: 5%;margin-top: 2%">완료</button>
+                <!-- type이 제출?? -->
+            </div>
+        </form>
+    </div>
+
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stack Multipurpose HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Description Here">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<styel>
+    <!-- @FONT-FACE
+       {
+           font-family:'KaushanScript';
+        src:url("C:\Users\백제성\Desktop\miro2hackathon\src\fonts");
+    } -->
+</styel>
+
+<body class=" ">
+
+    <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top"
+        data-notification-link="search-box">
+        <form>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <input type="search" name="query" placeholder="Type search query and hit enter" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="text-center imagebg space--lg" data-overlay="3">
+        <div class="background-image-holder">
+            <img alt="background" src="img/cowork-miro.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-8 col-md-6">
+                    <h1>Hi, We're Miro</h1>
+                    <p class="lead">
+
+                    </p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <nav class="bar bar-toggle " data-fixed-at="200">
+        <div class="container" style="margin: 0 0 0 210px">
+            <div class="row">
+                <div class="col-md-1 col-sm-2 col-xs-3">
+                    <div class="bar__module">
+                        <a href="index.html">
+                            <img class="logo logo-dark" alt="logo" src="img/title-Miro.jpg" style=width:240px />
+                            <img class="logo logo-light" alt="logo" src="img/title-Miro.jpg" />
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+                <div class="col-md-10" style="margin-top:5px;">
+                    <div class="pull-right" style="display:inline">
+                        <%if(user == undefined){%>
+                        <form method="post" action='/login'>
+                            <button class="btn btn--sm btn--primary type--uppercase" href="/login" style=width:140%;>Login</button>
+                            <span class="btn__text"></span>
+                        </form>
+                        <%}else{%>
+                        <form method="post" action='/logout'>
+                            <button class="btn btn--sm btn--primary type--uppercase" style=width:140%; type='submit'>Logout</button>
+                            <span class="btn__text"></span>
+                        </form>
+                        <%}%>
+
+
+                    </div>
+                    <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="sidebar-menu"
+                        data-animation="from-right">
+                        <div class="side-menu__module pos-vertical-center text-right">
+                            <ul class="menu-vertical">
+                                <li>
+                                    <a class="inner-link" href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a class="inner-link" href="/about">About</a>
+                                </li>
+                                <li>
+                                    <a class="inner-link" href="/list">Board</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <!--end module-->
+                        <div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
+                            <ul class="social-list list-inline text-right list--hover">
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1 pull-right">
+                    <div>
+                        <a class="menu-toggle" href="#" data-notification-link="sidebar-menu">
+                            <i class="stack-interface stack-menu"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--end columns-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </nav>
+
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <h2>경북대학교 열정최강 미로동아리!</h2>
+                    <hr>
+                    <p class="lead">
+                        경북대학교 최고 소프트웨어 전문가들이 이끌어가는 동아리!<br>
+                        전자공학부 유일의 웹프로그래밍 동아리!!<br>
+                        (앱동이랑은 비교도 안됨)<br>
+                        (주식동아리 미로랑 다름)
+                    </p>
+
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11">
+                    <div class="slider border--round" data-arrows="true" data-paging="true">
+                        <ul class="slides">
+                            <li>
+                                <img alt="Image" src="img/coding-miro.jpg" />
+                            </li>
+                            <li>
+                                <img alt="Image" src="img/hot-miro.jpg" />
+                            </li>
+                            <li>
+                                <img alt="Image" src="img/pizza-miro.jpg" />
+                            </li>
+                            <li>
+                                <img alt="Image" src="img/chicken-miro.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="footer-3 text-center-xs space--xs ">
+        <div class="container" style="padding-left: 30px">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img alt="Image" class="logo" src="img/title-Miro.jpg" />
+                    <ul class="list-inline list--hover">
+
+                    </ul>
+                </div>
+                <div class="col-sm-6 text-right text-center-xs">
+
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="type--fine-print">
+                        Supercharge your web workflow
+                    </p>
+                </div>
+                <div class="col-sm-6 text-right text-center-xs">
+                    <span class="type--fine-print">&copy;
+                        <span class="update-year"></span> Miro </span>
+
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </footer>
+    </div>
+    <!--<div class="loader"></div>-->
+    <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+        <i class="stack-interface stack-up-open-big"></i>
+    </a>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/flickity.min.js"></script>
+    <script src="/js/easypiechart.min.js"></script>
+    <script src="/js/parallax.js"></script>
+    <script src="/js/typed.min.js"></script>
+    <script src="/js/datepicker.js"></script>
+    <script src="/js/isotope.min.js"></script>
+    <script src="/js/ytplayer.min.js"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/granim.min.js"></script>
+    <script src="/js/jquery.steps.min.js"></script>
+    <script src="/js/countdown.min.js"></script>
+    <script src="/js/twitterfetcher.min.js"></script>
+    <script src="/js/spectragram.min.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
